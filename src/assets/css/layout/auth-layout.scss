@@ -1,9 +1,12 @@
-.auth-layout-container {
+.auth-layout-container.ant-layout-content {
   display: flex;
   flex: 1;
   flex-grow: 1;
-  flex-direction: row;
   width: 100%;
+  flex-direction: column;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
 
   .auth-layout-left {
     flex: 0 0 50%;
@@ -11,11 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    padding: 40px;
-
+    padding: 50px;
+    @media (min-width: 992px) {
+      width: 40%;
+    }
     .ant-carousel {
       width: 100%;
     }
@@ -65,7 +70,8 @@
     flex: 1;
     background-color: $white;
     display: flex;
-    padding: 135px;
+    padding: 100px;
+    position: relative;
     align-items: center;
     .logo {
     }

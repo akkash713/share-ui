@@ -1,26 +1,13 @@
-import React, { Component } from "react"
-import { connect, useDispatch } from "react-redux"
-import { withRouter } from "react-router"
-
-import { Button, Form, Icon, Input, Row, Checkbox, message } from "antd"
-
-import PublicWrapper from "../../common/public-component"
-import AuthLayout from "../../common/auth-layout"
-import { Formik } from "formik"
-import * as Yup from "yup"
-import { REQUEST_REGISTER } from "../../../redux/actions/user-actions"
-import { login, register } from "../../../redux/actions/user"
-import { history } from "../../../redux/store"
+import React, { Component } from "react";
+import AuthLayout from "../../common/auth-layout";
+import { Form, Input, Button, message, Checkbox } from "antd";
+import { Formik } from "formik";
+import * as Yup from "yup";
 
 // import { login } from '../../../actions/user';
 const validationSchema = Yup.object().shape({
-  fullName: Yup.string()
-    .label("Full name")
-    .required(),
-  email: Yup.string()
-    .label("Email")
-    .email()
-    .required(),
+  fullName: Yup.string().label("Full name").required(),
+  email: Yup.string().label("Email").email().required(),
   password: Yup.string()
     .label("Password")
     .required()
@@ -30,34 +17,32 @@ const validationSchema = Yup.object().shape({
     [true],
     "You must accept our terms before proceeding further"
   ),
-})
+});
 
 class Register extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       loading: false,
-    }
+    };
   }
 
   handleSignUp = async (values) => {
-    const { signUpUser } = this.props
+    const { signUpUser } = this.props;
     const body = {
       fullName: values.fullName,
       email: values.email,
       password: values.password,
       timeZone: "Asia/Kolkata",
-    }
+    };
     try {
-      await signUpUser(body)
+      await signUpUser(body);
     } catch (err) {
-      message.error(err.message)
+      message.error(err.message);
     }
-  }
+  };
 
   render() {
-    const { getFieldDecorator } = this.props.form
-
     return (
       <AuthLayout
         authTitle="Hello."
@@ -77,14 +62,14 @@ class Register extends Component {
           validateOnChange={false}
           validateOnBlur={false}
           onSubmit={(values, { resetForm }) => {
-            this.handleSignUp(values)
+            this.handleSignUp(values);
             resetForm({
               fullName: "",
               email: "",
               password: "",
               acceptTerms: false,
               timeZone: "Asia/Kolkata",
-            })
+            });
           }}
         >
           {({ handleSubmit, handleChange, values, errors, isSubmitting }) => (
@@ -129,32 +114,6 @@ class Register extends Component {
                   name="password"
                 />
               </Form.Item>
-              {/* <Form.Item
-                label="Currency"
-                validateStatus={errors.eventTitle ? "error" : "success"}
-                help={errors.eventTitle ? errors.eventTitle : null}
-              >
-                <InputSelect
-                  name={"timeZone"}
-                  // label="Format of the event"
-                  options={[{
-
-                  }]}
-                  value={this.state.currency}
-                  onChange={(e) => this.setState({ currency: e })}
-                  // error={
-                  //   errors.tickets &&
-                  //   touched.tickets &&
-                  //   touched.tickets[index] &&
-                  //   errors.tickets[index] &&
-                  //   touched.tickets[index].ticketType &&
-                  //   errors.tickets[index].ticketType &&
-                  //   errors.tickets[index].ticketType
-                  //     ? errors.tickets[index].ticketType
-                  //     : null
-                  // }
-                />
-              </Form.Item> */}
 
               <Form.Item
                 className="mt-3"
@@ -191,7 +150,7 @@ class Register extends Component {
                   type="primary"
                   disabled={isSubmitting}
                   htmlType="submit"
-                  className="primary-org-button w-100"
+                  className="primary-org-button w-100 btn-lg"
                   onClick={handleSubmit}
                 >
                   Create My Account
@@ -201,25 +160,8 @@ class Register extends Component {
           )}
         </Formik>
       </AuthLayout>
-    )
+    );
   }
 }
 
-const WrappedSignUp = Form.create({ name: "signup" })(Register)
-
-const mapStateToProps = (state) => {
-  return {
-    activeStep: state.createEvent.formData.activeStep,
-    data: state.createEvent.formData,
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    signUpUser: (obj) => dispatch(register(obj)),
-  }
-}
-
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(WrappedSignUp)
-)
+export default Register;

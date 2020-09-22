@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import "./variables.scss";
-@import "./layout/auth-layout.scss";
+@import "./variables";
+@import "./layout/auth-layout";
+@import "./bootstrap";
+
+//components
+@import "./components/inputs";
+@import "./components/buttons";
 
 html body {
   font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 }
 p {
   font-size: 16px;
@@ -13,4 +19,13 @@ p {
 .page-title {
   font-size: 24px;
   font-weight: 700;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.text-green {
+  color: $color-green;
 }

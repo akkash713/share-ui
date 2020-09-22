@@ -1,0 +1,31 @@
+input::placeholder {
+  /* Most modern browsers support this now. */
+  color: #909;
+}
+
+.checkbox-custom {
+  font-size: 18px;
+}
+
+.material-input {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  height: 55px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.material-password {
+  input {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    height: 55px;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .ant-input-suffix {
+    font-size: 18px;
+    right: 24px;
+  }
+}

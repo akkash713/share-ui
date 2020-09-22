@@ -1,0 +1,18 @@
+.ant-btn {
+  font-size: 18px;
+  &.btn-lg {
+    min-height: 55px;
+  }
+  &.primary-org-button {
+    background-color: $primary-orange;
+    color: #fff;
+    font-weight: 700;
+    border-radius: $radius-m;
+    border: solid 1px $primary-orange;
+    &:hover {
+      background-color: $primary-orange;
+      color: #fff;
+      opacity: 0.9;
+    }
+  }
+}

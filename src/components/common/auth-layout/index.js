@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel, Layout } from "antd";
+import { Carousel, Layout, Button } from "antd";
 
 const { Content } = Layout;
 
@@ -73,10 +73,30 @@ class AuthLayout extends Component {
             </Carousel>
           </div>
           <div className="auth-layout-right">
+            <div className="absolute-wrapper">
+              <p className="action-text mr-3">{this.props.actionText}</p>
+              <Button
+                className="primary-org-button"
+                type="primary"
+                href={this.props.to}
+              >
+                {this.props.action}
+              </Button>
+            </div>
             <div className="auth-card-container w-100">
-              <img src={require("../../../assets/images/logo.svg")} />
-              <h4 className="mt-5">Welcome back!</h4>
-              <h4 className="font-weight-bold">Please login....</h4>
+              <img
+                src={require("../../../assets/images/logo.svg")}
+                className="mb-5 d-inline-block"
+              />
+              <h4 className=" mb-3 page-title fw-500">
+                {this.props.authTitle}
+              </h4>
+
+              <h4 className="page-title">{this.props.authSubText}</h4>
+              {this.props.authMessage ? (
+                <p className="auth-message mt-3">{this.props.authMessage}</p>
+              ) : null}
+              <div className="auth-form mt-5">{this.props.children}</div>
             </div>
           </div>
         </Content>
