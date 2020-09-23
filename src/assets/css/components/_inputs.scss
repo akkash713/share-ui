@@ -29,3 +29,34 @@ input::placeholder {
     right: 24px;
   }
 }
+.searchinput {
+  .ant-input-search {
+    border-radius: 6px;
+    border: none;
+    background-color: $color-light;
+    input {
+      background-color: transparent;
+    }
+    .ant-input-search-icon::before {
+      border: none;
+    }
+  }
+}
+
+.avatar-stacked {
+  .avatar {
+    margin-right: -0.5rem !important;
+    border: solid 2px #fff;
+  }
+}
+.avatar {
+  display: flex;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &.avatar-sm {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,72 @@
+.base-layout-container {
+  .logo {
+    width: 120px;
+  }
+  .logo-holder {
+    width: 232px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .base-layout-header {
+    background-color: $white;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    .ant-dropdown-link {
+      display: flex;
+      align-items: center;
+      color: $color-text;
+      &:after {
+        content: "";
+        border-bottom: solid 2px $color-text;
+        border-right: solid 2px $color-text;
+        padding: 3px;
+        margin-left: 8px;
+        transform: rotate(45deg);
+      }
+    }
+    .ant-dropdown-menu {
+      width: 350px;
+    }
+  }
+  .base-layout-sider {
+    padding: 20px 22px;
+    background-color: $white;
+    .sider-menu-container {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .ant-menu-item.contacts-menu-item {
+    border: solid 1px transparent;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    &.ant-menu-item-active,
+    &.ant-menu-item-selected {
+      background-color: $color-light-purple;
+      border: solid 1px $color-purple;
+      color: $color-purple;
+      .count {
+        background-color: $color-purple;
+        color: #fff;
+      }
+    }
+    .count {
+      width: 20px;
+      font-size: 12px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 20px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .ant-layout.content-layout {
+    background-color: $color-grey;
+    padding: 40px;
+  }
+}

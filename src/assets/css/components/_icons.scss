@@ -1,0 +1,31 @@
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  &.icon-square {
+    background: $color-grey;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 2;
+    text-align: center;
+    vertical-align: baseline;
+    color: #828282;
+    position: relative;
+  }
+  &.icon-quest {
+    top: 18px;
+  }
+  &.icon-plus {
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  &.icon-l {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+  }
+}

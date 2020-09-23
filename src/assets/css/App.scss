@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import "./variables";
-@import "./layout/auth-layout";
 @import "./bootstrap";
+
+@import "./layout/auth-layout";
+@import "./layout/base-layout";
 
 //components
 @import "./components/inputs";
 @import "./components/buttons";
+@import "./components/icons";
+@import "./components/cards";
 
 html body {
   font-family: "Quicksand", sans-serif;
@@ -22,6 +26,9 @@ p {
 }
 .fw-500 {
   font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
 }
 .d-inline-block {
   display: inline-block !important;
