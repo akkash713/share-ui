@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Layout, Menu, Dropdown, Input } from "antd";
+import { Layout, Menu, Dropdown, Button } from "antd";
 import Avatar from "../avatar";
 
 const menu = (
@@ -19,7 +19,7 @@ const menu = (
 class BaseHeader extends Component {
   render() {
     return (
-      <Layout className="base-layout-container" style={{ height: "100vh" }}>
+      <Layout className="base-layout-container">
         <header className="header" className="base-layout-header">
           <div className="d-flex logo-holder">
             <img
@@ -43,9 +43,30 @@ class BaseHeader extends Component {
         <div className="subheader">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-md-4"></div>
-              <div className="col-md-4"></div>
-              <div className="col-md-4"></div>
+              <div className="col-md-4 d-flex align-items-center">
+                <div className="icon back-arrow-icon mr-2"></div>
+                <h3 className="m-0">Geopgraphy</h3>
+              </div>
+              <div className="col-md-4 d-flex justify-content-center">
+                <Menu mode="horizontal" defaultSelectedKeys={["create"]}>
+                  <Menu.Item key="create">Create</Menu.Item>
+                  <Menu.Item key="connect">Connect</Menu.Item>
+                  <Menu.Item key="share">Share</Menu.Item>
+                  <Menu.Item key="result">Result</Menu.Item>
+                </Menu>
+              </div>
+              <div className="col-md-4 text-right">
+                <Button
+                  type="link"
+                  className="button-transparant-grey btn-m mr-5"
+                >
+                  <span className="icon icon-preview"></span>Preview
+                </Button>
+                <Button className="primary-org-button btn-m">
+                  <span className="icon icon-upload"></span>
+                  Publish
+                </Button>
+              </div>
             </div>
           </div>
         </div>

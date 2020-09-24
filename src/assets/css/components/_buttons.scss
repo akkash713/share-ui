@@ -3,6 +3,9 @@
   &.btn-lg {
     min-height: 55px;
   }
+  &.btn-m {
+    min-height: 40px;
+  }
   &.primary-org-button {
     background-color: $primary-orange;
     color: #fff;
@@ -14,5 +17,9 @@
       color: #fff;
       opacity: 0.9;
     }
+  }
+  &.button-transparant-grey {
+    color: $color-text;
+    font-weight: bold;
   }
 }

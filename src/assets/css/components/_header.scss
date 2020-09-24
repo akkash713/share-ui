@@ -1,0 +1,31 @@
+.subheader {
+  background-color: $white;
+  padding: 10px 0px;
+  h3 {
+    font-weight: 700;
+    font-size: $font-size-m;
+    color: $color-text;
+  }
+  .ant-menu-horizontal {
+    border-bottom: none;
+    font-weight: 700;
+    line-height: 34px;
+    .ant-menu-item {
+      color: $color-grey2;
+      //   text-transform: uppercase;
+    }
+    .ant-menu-item-selected.ant-menu-item,
+    .ant-menu-item.ant-menu-item-active {
+      color: $primary-orange !important;
+      border-bottom: solid 2px $primary-orange !important;
+    }
+  }
+  .ant-btn {
+    .icon {
+      vertical-align: middle;
+      font-size: 1rem;
+      margin-right: 5px;
+    }
+    align-items: center;
+  }
+}

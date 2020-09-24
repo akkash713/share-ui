@@ -28,4 +28,19 @@
     width: 40px;
     line-height: 35px;
   }
+  &.back-arrow-icon {
+    background: url(../../svg/back-arrow-icon.svg) center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  &.icon-upload {
+    background: url(../../svg/upload-icon.svg) center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  &.icon-preview {
+    background: url(../../svg/eye-icon.svg) center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
 }
