@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const Avatar = () => {
+const Editor = () => {
   return (
     <div
       className="avatar avatar-sm mr-2"
@@ -11,4 +11,4 @@ const Avatar = () => {
     ></div>
   );
 };
-export default Avatar;
+export default Editor;

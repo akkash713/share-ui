@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../common/header";
-import { Tabs, Tooltip, Button } from "antd";
+import { Tabs, Tooltip } from "antd";
+import BlockTab from "../layout/block-layout";
 
 const { TabPane } = Tabs;
 
@@ -12,32 +13,51 @@ class CreateForm extends Component {
         <Tabs
           defaultActiveKey="1"
           tabPosition="left"
-          style={{ height: "80vh" }}
+          className="custom-tab"
+          style={{ height: "83vh" }}
         >
           <TabPane
             tab={
-              <Tooltip placement="right" title="Builder">
-                <span className="builder-icon icon">TR</span>
+              <Tooltip
+                placement="right"
+                title="Block"
+                className="block-icon mt-5"
+              >
+                <span className="icon"></span>
+              </Tooltip>
+            }
+            key="Block"
+          >
+            <BlockTab />
+          </TabPane>
+          <TabPane
+            tab={
+              <Tooltip
+                placement="right"
+                title="Builder"
+                className="builder-icon"
+              >
+                <span className="icon"></span>
               </Tooltip>
             }
             key="Builder"
           >
-            ff
+            Builder Content
           </TabPane>
           <TabPane
             tab={
-              <Tooltip placement="right" title="Design">
-                <span className="design-icon icon">ee</span>
+              <Tooltip placement="right" title="Design" className="design-icon">
+                <span className="icon"></span>
               </Tooltip>
             }
-            key="design"
+            key="design-icon"
           >
-            ff
+            Design Content
           </TabPane>
           <TabPane
             tab={
-              <Tooltip placement="right" title="Logic jump">
-                <span className="logic-icon icon">s</span>
+              <Tooltip placement="right" title="Login Jump">
+                <span className="logic-icon icon"></span>
               </Tooltip>
             }
             key="logic-jump"
@@ -46,33 +66,37 @@ class CreateForm extends Component {
           </TabPane>
           <TabPane
             tab={
-              <Tooltip placement="right" title="Calculator">
-                <span className="calculator-icon icon">e</span>
+              <Tooltip
+                placement="right"
+                title="Calculator"
+                className="calculator-icon"
+              >
+                <span className="icon"></span>
               </Tooltip>
             }
-            key="Calculator"
+            key="calculator"
           >
-            Logic jump
+            Calculator content comes here
           </TabPane>
           <TabPane
             tab={
-              <Tooltip placement="right" title="Email notification">
-                <span className="email-icon icon">d</span>
+              <Tooltip placement="right" title="Notification">
+                <span className="bell-icon icon"></span>
               </Tooltip>
             }
-            key="email-notification"
+            key="Notification"
           >
-            Logic jump
+            Bell Icon
           </TabPane>
           <TabPane
             tab={
-              <Tooltip placement="right" title="RespondentAccess">
-                <span className="respond-access-icon icon">d</span>
+              <Tooltip placement="right" title="Settings">
+                <span className="settings-icon icon"></span>
               </Tooltip>
             }
             key="respondent-acces"
           >
-            Logic jump
+            Settings Icon
           </TabPane>
         </Tabs>
       </div>

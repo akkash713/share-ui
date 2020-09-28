@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AuthLayout from "../../common/auth-layout";
+import AuthLayout from "../../layout/auth-layout";
 import { Form, Input, Button, message, Checkbox } from "antd";
 import { Formik } from "formik";
 import * as Yup from "yup";

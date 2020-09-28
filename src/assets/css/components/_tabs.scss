@@ -1,0 +1,15 @@
+.ant-tabs.custom-tab {
+  margin-top: 5px;
+  .ant-tabs-nav {
+    background: $white;
+  }
+  .ant-tabs-content.ant-tabs-content-left {
+    height: 100%;
+    .ant-tabs-tabpane {
+      padding-left: 0;
+    }
+  }
+}
+.ant-tabs.option-tab .ant-tabs-nav {
+  background-color: transparent;
+}

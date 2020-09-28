@@ -28,6 +28,10 @@
     width: 40px;
     line-height: 35px;
   }
+  &.icon-m {
+    height: 30px;
+    width: 30px;
+  }
   &.back-arrow-icon {
     background: url(../../svg/back-arrow-icon.svg) center no-repeat;
     width: 20px;
@@ -43,4 +47,120 @@
     width: 20px;
     height: 20px;
   }
+  &.block-icon {
+    background: url(../../svg/builder-icon.svg) center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  &.builder-icon {
+    background: url(../../svg/pencil-icon.svg) center no-repeat;
+  }
+  &.design-icon {
+    background: url(../../svg/design-icon.svg) center no-repeat;
+  }
+  &.logic-icon {
+    background: url(../../svg/union-icon.svg) center no-repeat;
+  }
+  &.calculator-icon {
+    background: url(../../svg/calculator-icon.svg) center no-repeat;
+  }
+  &.bell-icon {
+    background: url(../../svg/bell-icon.svg) center no-repeat;
+  }
+  &.settings-icon {
+    background: url(../../svg/settings-icon.svg) center no-repeat;
+  }
+  &.icon-image {
+    background: url(../../svg/image-icon.svg) center no-repeat;
+  }
+  &.icon-setting {
+    background: url(../../svg/setting-icon.svg) center no-repeat;
+  }
+  &.dot-icon {
+    background: url(../../svg/verticleDots-icon.svg) center no-repeat;
+  }
+}
+.welcome-icon {
+  background: url(../../svg/welcome-icon.svg) #6fcf97 center no-repeat;
+}
+.thank-icon {
+  background: url(../../svg/thankyou-icon.svg) #56ccf2 center no-repeat;
+}
+.tick-icon {
+  background: url(../../svg/tick-icon.svg) #47aab2 center no-repeat;
+}
+.right-icon {
+  background: url(../../svg/tick-icon.svg) center no-repeat;
+}
+.call-icon {
+  background: url(../../svg/call-icon.svg) #2ac475 center no-repeat;
+}
+.shortText-icon {
+  background: url(../../svg/shortText-icon.svg) #ffba54 center no-repeat;
+}
+.longText-icon {
+  background: url(../../svg/long-text.svg) #e26e5d center no-repeat;
+}
+.statement-icon {
+  background: url(../../svg/quote-icon.svg) #94ae89 center no-repeat;
+}
+.picture-icon {
+  background: url(../../svg/picture-icon.svg) #a086c2 center no-repeat;
+}
+.yesNo-icon {
+  background: url(../../svg/yesNo-icon.svg) #bf3a5b center no-repeat;
+}
+.mail-icon {
+  background: url(../../svg/mail-icon.svg) #357784 center no-repeat;
+}
+.chart-icon {
+  background: url(../../svg/chart-icon.svg) #74a4be center no-repeat;
+}
+.star-icon {
+  background: url(../../svg/star-icon.svg) #f5cc6c center no-repeat;
+}
+.date-icon {
+  background: url(../../svg/date-icon.svg) #f09f98 center no-repeat;
+}
+.number-icon {
+  background: url(../../svg/hash.svg) #e05078 center no-repeat;
+}
+.arow-down-icon {
+  background: url(../../svg/hash.svg) #584579 center no-repeat;
+}
+.legal-icon {
+  background: url(../../svg/legal-icon.svg) #c1967b center no-repeat;
+}
+.upload-icon {
+  background: url(../../svg/folder-icon.svg) #396a94 center no-repeat;
+}
+.payment-icon {
+  background: url(../../svg/payment.svg) #417a57 center no-repeat;
+}
+.link-icon {
+  background: url(../../svg/link-icon.svg) #bac178 center no-repeat;
+}
+.qgroup-icon {
+  background: url(../../svg/qgroup-icon.svg) #d94d4e center no-repeat;
+}
+.noPreview-icon {
+  background: url(../../svg/no-preview.svg) #4c4c4c center no-repeat;
+}
+.ant-tabs-tab .icon {
+  width: 20px;
+  height: 20px;
+}
+.ant-tabs-tab-active {
+  .icon {
+    filter: invert(42%) sepia(82%) saturate(2398%) hue-rotate(338deg)
+      brightness(98%) contrast(92%);
+    &:hover {
+      filter: invert(42%) sepia(82%) saturate(2398%) hue-rotate(346deg)
+        brightness(98%) contrast(92%);
+    }
+  }
+}
+
+.reload-icon {
+  background: url(../../svg/reload-icon.svg) center no-repeat;
 }
