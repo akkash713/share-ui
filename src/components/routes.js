@@ -5,6 +5,7 @@ import ForgotPasswordForm from "./public-pages/forgot-password";
 import Register from "./public-pages/register";
 import Workspaces from "./workspaces";
 import CreateForm from "./create-form";
+import Share from "./share";
 
 const Routes = () => {
   return (
@@ -15,6 +16,7 @@ const Routes = () => {
         <Route path="/register" component={Register} />
         <Route path="/workspaces" component={Workspaces} />
         <Route path="/create-form" component={CreateForm} />
+        <Route path="/share" component={Share} />
         <Route component={Login} />
       </Switch>
     </BrowserRouter>

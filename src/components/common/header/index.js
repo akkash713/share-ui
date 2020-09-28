@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Menu, Dropdown, Button } from "antd";
 import Avatar from "../avatar";
+import { Link } from "react-router-dom";
 
 const menu = (
   <Menu>
@@ -51,7 +52,9 @@ class BaseHeader extends Component {
                 <Menu mode="horizontal" defaultSelectedKeys={["create"]}>
                   <Menu.Item key="create">Create</Menu.Item>
                   <Menu.Item key="connect">Connect</Menu.Item>
-                  <Menu.Item key="share">Share</Menu.Item>
+                  <Menu.Item key="share">
+                    <Link to="/share">Share</Link>
+                  </Menu.Item>
                   <Menu.Item key="result">Result</Menu.Item>
                 </Menu>
               </div>

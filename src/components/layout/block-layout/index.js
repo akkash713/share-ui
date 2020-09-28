@@ -7,6 +7,7 @@ import PhoneNumber from "../../pages/form-editor/phone-number";
 import ShortText from "../../pages/form-editor/short-text";
 import LongText from "../../pages/form-editor/long-text";
 import Statement from "../../pages/form-editor/statement";
+import YesNoCheck from "../../pages/form-editor/yesNo-check";
 
 const blockList = [
   { id: "1", name: "Welcome screen", iconName: "welcome-icon" },
@@ -60,9 +61,11 @@ class BlockLayout extends Component {
         return <LongText />;
       case "7":
         return <Statement />;
+      case "9":
+        return <YesNoCheck />;
 
       default:
-        return <Statement />;
+        return <YesNoCheck />;
     }
   };
 
