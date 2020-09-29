@@ -16,3 +16,70 @@
     font-size: $font-size-xxs;
   }
 }
+.payment-card-ui {
+  background-color: $color-orange-light;
+  border: solid 1px $primary-orange;
+  border-radius: 12px;
+  .ant-input.input-area-custom {
+    background-color: transparent;
+    width: 100%;
+  }
+  input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $primary-orange;
+    opacity: 1; /* Firefox */
+  }
+
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $primary-orange;
+  }
+
+  input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $primary-orange;
+  }
+}
+.img-option {
+  .col-md-6 {
+    margin-bottom: 0px;
+    position: relative;
+    border: solid 2px transparent;
+  }
+  .selected {
+    .img-card {
+      border: solid 2px $primary-orange;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        right: -1px;
+        top: -1px;
+      }
+      &:before {
+        border-top: solid 40px $primary-orange;
+        border-left: solid 40px transparent;
+      }
+      &:after {
+        background: url(../../svg/tick-icon.svg) center no-repeat;
+        width: 15px;
+        height: 12px;
+        top: 6px;
+        right: 1px;
+        background-size: 100%;
+      }
+    }
+  }
+  .img-card {
+    background-color: $color-orange-light;
+    position: relative;
+    padding: 5px 5px 40px;
+    height: 100%;
+  }
+  .text-center {
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "antd";
 
 const Welcome = () => {
@@ -16,7 +16,7 @@ const Welcome = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-6 h-100 bg-white">
+      <div className="col-md-6 overflowY-scroll bg-white">
         <div className="edit-view-block p-4">
           <div className="d-flex justify-content-end">
             <div className="btn-shadow d-flex align-items-center no-wrap mr-2 px-2">
@@ -26,7 +26,7 @@ const Welcome = () => {
           </div>
           <div className="text-center m-5">
             <div className="thanks-message-placeholder mx-auto mb-4"></div>
-            <p>Type welcome message here!</p>
+            <h5 className="fw-700">Type welcome message here!</h5>
             <Button className="primary-org-button btn-m">Start</Button>
           </div>
         </div>

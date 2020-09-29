@@ -1,8 +1,10 @@
 import React from "react";
-import { Button, Input } from "antd";
+import { Select, Button } from "antd";
 import ViewAll from "../view-all";
 
-const ShortText = () => {
+const DropDown = () => {
+  const { Option } = Select;
+
   return (
     <div className="row">
       <div className="col-md-6">
@@ -18,22 +20,27 @@ const ShortText = () => {
           </div>
           <div className="my-5">
             <h5 className="fw-700">
-              4. In your opinion, what is the meaning of life?
+              10. Select a city/state of india from the following option?
             </h5>
-            <Input
-              className="input-area-custom"
-              placeholder="The actual meaning of life is to fulfill your purpose in life and accomplish your goals. What I mean by this is, everyone has a purpose, of why they are...."
-            />
-            <div className="text-center"></div>
+            <Select
+              defaultValue="lucy"
+              style={{ width: "60%" }}
+              className="select-custom-style"
+            >
+              <Option value="jack">Option 1</Option>
+              <Option value="Option2">Option 2</Option>
+              <Option value="Option3">Option 3</Option>
+              <Option value="Option4">Option 4</Option>
+              <Option value="Option5">Option 5</Option>
+            </Select>
           </div>
+
           <div className="d-block">
-            <Button className="primary-org-button btn-m d-flex align-items-center">
-              Ok <span className="icon right-icon icon-m"></span>
-            </Button>
+            <Button className="primary-org-button btn-m">Submit</Button>
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default ShortText;
+export default DropDown;

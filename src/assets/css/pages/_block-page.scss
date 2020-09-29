@@ -15,8 +15,8 @@
     cursor: pointer;
   }
   .icon {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
     border-radius: 2px;
     vertical-align: middle;
   }
@@ -31,8 +31,17 @@
 .block-right-content {
   margin-left: 250px;
   height: 100%;
+  @media (min-width: 992px) {
+    .overflowY-scroll {
+      height: calc(100vh - 120px);
+    }
+  }
+
   .row {
     height: 100%;
+  }
+  h5 {
+    margin-bottom: 30px;
   }
 }
 .editor-block {
@@ -67,6 +76,10 @@
     no-repeat;
   width: 250px;
   height: 250px;
+}
+.thanks-message-banner {
+  display: block;
+  width: 100%;
 }
 .choice-list {
   li {

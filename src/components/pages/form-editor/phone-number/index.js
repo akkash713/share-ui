@@ -11,7 +11,7 @@ const PhoneNumber = () => {
       <div className="col-md-6">
         <ViewAll />
       </div>
-      <div className="col-md-6 h-100 bg-white">
+      <div className="col-md-6 overflowY-scroll bg-white">
         <div className="edit-view-block p-4">
           <div className="d-flex justify-content-end">
             <div className="btn-shadow d-flex align-items-center no-wrap mr-2 px-2">
@@ -20,9 +20,8 @@ const PhoneNumber = () => {
             <div className="btn-shadow icon reload-icon d-flex icon-l"></div>
           </div>
           <div className="my-5">
-            <p>
-              <span className="text-orange">3.</span>What is your Phone number?
-            </p>
+            <h5 className="fw-700">3. What is your Phone number?</h5>
+
             <PhoneInput
               defaultCountry="IN"
               value={value}

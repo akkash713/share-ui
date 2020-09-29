@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, Input } from "antd";
+import { Radio, Button } from "antd";
 import ViewAll from "../view-all";
 
-const ShortText = () => {
+const Legal = () => {
+  const plainOptions = ["I accept", "I don't accept"];
   return (
     <div className="row">
       <div className="col-md-6">
@@ -18,22 +19,20 @@ const ShortText = () => {
           </div>
           <div className="my-5">
             <h5 className="fw-700">
-              4. In your opinion, what is the meaning of life?
+              11. Do you accept all the terms and conditions?
             </h5>
-            <Input
-              className="input-area-custom"
-              placeholder="The actual meaning of life is to fulfill your purpose in life and accomplish your goals. What I mean by this is, everyone has a purpose, of why they are...."
+            <Radio.Group
+              options={plainOptions}
+              className="radio-custom-style"
             />
-            <div className="text-center"></div>
           </div>
+
           <div className="d-block">
-            <Button className="primary-org-button btn-m d-flex align-items-center">
-              Ok <span className="icon right-icon icon-m"></span>
-            </Button>
+            <Button className="primary-org-button btn-m">Submit</Button>
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default ShortText;
+export default Legal;

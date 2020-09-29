@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "antd";
 import ViewAll from "../view-all";
 
@@ -8,7 +8,7 @@ const Statement = () => {
       <div className="col-md-6">
         <ViewAll />
       </div>
-      <div className="col-md-6 h-100 bg-white">
+      <div className="col-md-6 overflowY-scroll bg-white">
         <div className="edit-view-block p-4">
           <div className="d-flex justify-content-end">
             <div className="btn-shadow d-flex align-items-center no-wrap mr-2 px-2">

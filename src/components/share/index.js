@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Share = () => {
   return <div>Share UI </div>;

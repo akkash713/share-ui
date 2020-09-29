@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Button } from "antd";
 import ViewAll from "../view-all";
 
@@ -8,7 +8,7 @@ const MultipleChoice = () => {
       <div className="col-md-6">
         <ViewAll />
       </div>
-      <div className="col-md-6 h-100 bg-white">
+      <div className="col-md-6 overflowY-scroll bg-white">
         <div className="edit-view-block p-4">
           <div className="d-flex justify-content-end">
             <div className="btn-shadow d-flex align-items-center no-wrap mr-2 px-2">
@@ -17,10 +17,7 @@ const MultipleChoice = () => {
             <div className="btn-shadow icon reload-icon d-flex icon-l"></div>
           </div>
           <div className="my-5">
-            <p>
-              <span className="text-orange">a.</span> Where would you find the
-              Mariana Trench?
-            </p>
+            <h5 className="fw-700">Where would you find the Mariana Trench?</h5>
             <div className="text-center">
               <ul className="choice-list list-unstyled float-left mb-5 p-0">
                 <li>

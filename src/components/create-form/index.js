@@ -42,7 +42,7 @@ class CreateForm extends Component {
             }
             key="Builder"
           >
-            Builder Content
+            <BlockTab />
           </TabPane>
           <TabPane
             tab={

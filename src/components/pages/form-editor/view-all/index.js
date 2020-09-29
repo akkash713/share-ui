@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { Button } from "antd";
+import React from "react";
 import IconSet from "../../../common/icon-set";
+import { Drawer, Button } from "antd";
 
 const ViewAll = () => {
   return (
-    <div className="h-100 overflowY-scroll">
+    <div className="overflowY-scroll">
       <div className="editor-block">
         <div className="media">
           <div className="icon welcome-icon mr-2">
-            <span className="count"></span>
+            <span className="count">e</span>
           </div>
           <div className="media-body">
             <p className="text-muted">Type welcome message here</p>
